@@ -28,4 +28,7 @@
     <dimen name="config_padding_24dp">24dp</dimen>
     <dimen name="config_padding_30dp">30dp</dimen>
 
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="icon_size_mid">40dp</dimen>
+
 </resources>

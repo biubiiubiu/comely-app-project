@@ -21,10 +21,9 @@
     android:background="?attr/xui_config_color_background"
     android:orientation="vertical">
 
-    <TextView
-        style="@style/TextStyle.Title"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:text="@string/menu_trending" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpage_playing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

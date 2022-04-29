@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.xuexiang.templateproject"
-        minSdkVersion 17
+        minSdkVersion 21
         targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0.0"
@@ -124,6 +124,15 @@ dependencies {
 
     //美团多渠道打包
     implementation 'com.meituan.android.walle:library:1.1.6'
+
+    // 图片模糊
+    implementation 'jp.wasabeef:blurry:4.0.1'
+
+    // 圆形ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // 图片选择器
+    implementation 'io.github.lucksiege:pictureselector:v3.0.9'
 }
 //自动添加X-Library依赖
 apply from: 'x-library.gradle'

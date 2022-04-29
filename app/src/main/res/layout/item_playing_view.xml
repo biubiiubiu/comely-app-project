@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ps_audio_placeholder"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent">
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/check_module"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:src="@drawable/ic_playing_check_module"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_width="wrap_content" />
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/search_btn"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:src="@drawable/ic_playing_search"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/music_title_text"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:text="稻香 - 周杰伦"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_blank_for_cover_lyrics"
+        android:layout_gravity="center"
+        android:layout_height="350dp"
+        android:layout_weight="4"
+        android:layout_width="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/music_cover_img"
+            android:layout_gravity="center"
+            android:layout_height="320dp"
+            android:layout_width="320dp"
+            android:src="@drawable/ps_audio_placeholder" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/lyrics"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="为什么 人要这么的脆弱 堕落\n请你打开电视看看\n多少人为生命 在努力勇敢的走下去\n我们是不是该知足\n珍惜一切 就算没有拥有\n还记得 你说家是唯一的城堡\n"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/like_btn"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_playing_dislike"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/comment_btn"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_playing_comment"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_width="wrap_content" />
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/download_btn"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_playing_download_btn"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/more_btn"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_playing_more"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+            <SeekBar
+                android:id="@+id/process_sb"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:maxHeight="5.0dp"
+                android:minHeight="5.0dp"
+                android:progressDrawable="@drawable/sb_bar"
+                android:thumb="@drawable/sb_thumb" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/find_btn"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_find_down"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/find_text"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/menu_news"
+                android:textColor="@color/gray_btn" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/play_pause_btn"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_playing_pause"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/my_btn"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_my_down"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/my_text"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/menu_profile"
+                android:textColor="@color/gray_btn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
